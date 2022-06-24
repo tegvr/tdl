@@ -17,7 +17,10 @@ const ToDoForm = ({ addTask }) => {
         <div className='ToDoForm'>
         <form onSubmit={handleSubmit}>
             <input value={userInput} type="text" onChange={handleChange} placeholder="Masukkan Item Baru..."/>
+            <div>
             <button>Submit</button>
+            </div>
+            
         </form>
         </div>
     );

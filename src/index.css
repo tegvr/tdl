@@ -5,6 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin:0 auto;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 code {
@@ -17,11 +19,25 @@ code {
   width:100%;
 }
 .peringatan{
+  position: relative;
   font-style: italic;
+  margin-bottom:15px;
+  font-weight: bold;
+  color:white;
 }
 .todo {
   cursor: pointer;
+  color:white;
+  font-weight: bold;
+  padding:10px 10px 10px 20px;
+  border-bottom:1px solid white;
+  background-color: rgba(255,255,255,.1);
+  margin-top:5px;
 }
+  .todoItem{
+    padding:10px;
+    border:1px solid white;
+  }
 .strike {
   text-decoration: line-through;
 }
@@ -31,11 +47,36 @@ code {
   left:0;
   width:50%;
 }
+.hapus-btn,
+  .ToDoForm form button{
+    background:#BDB6DC; 
+    margin-top:10px;
+    border:1px solid white;
+    padding:10px 20px 10px 20px; 
+    cursor: pointer;
+  }
+
+  .ToDoForm form input{
+    padding:15px;
+    border-radius: 5px;
+    border:0px;
+  }
+  .hapus-btn{
+    margin-top:10px;
+  }
 .ToDoList{
   float:right;
-  right:0;
-  width:50%;
+  position: absolute;
+  right:40%;
+  /* width:50%; */
 }
 .header-todo{
   margin:20px 20px 20px 50px;
 }
+  .header-todo a{
+    font-weight: bold;
+    color:white;
+  }
+  .header-title{
+    color:white;
+  }

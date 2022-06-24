@@ -35,7 +35,6 @@ function App() {
       <Header />
       <ToDoForm addTask={addTask}/>
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
-      
     </div>
   );
 }
